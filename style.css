@@ -1,24 +1,50 @@
-body{
-  background-color: #FFFFE0; /* Warna kuning cerah */
+/* Mengatur tampilan dasar seluruh halaman web */
+body {
+  background-color: #FFFFE0; /* Warna latar belakang kuning cerah */
   font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
   color: #191970; /* Warna teks utama (Biru Gelap) */
 }
 
-.karti-profil {
+/* Mengatur tampilan kartu profil (Sudah diperbaiki nama class & titik komanya) */
+.kartu-profil {
   width: 300px;
-  margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kuri/kanan */
+  margin: 50px auto; /* 50px jarak atas/bawah, auto untuk menengahkan kartu di layar */
   padding: 20px;
-  background-color: white;
-  border-radius: 15px; /*Membuat sudut menjadi melengkung */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1): /* Efek bayangan */
+  background-color: white; /* Warna latar belakang kartu */
+  border-radius: 15px; /* Membuat sudut kartu menjadi melengkung */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan lembut di sekitar kartu */
+  text-align: center; /* Menengahkan semua teks dan elemen di dalam kartu */
 }
-|
 
+/* Mengatur tampilan gambar foto profil */
 .kartu-profil img {
   width: 150px;
-  border-radius: 50px; /* Trik untuk membuat persegi menjadi lingkaran sempurna */
+  height: 150px;
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi/terguling */
+  border-radius: 50%; /* Mengubah bentuk gambar persegi menjadi lingkaran sempurna */
 }
-.kartu-profil {
-  /* ... (kode dari slide sebelumnya) ... */
-  text-align: center; /* Menengahkan semua teks di dalam kartu */
+
+/* Mengatur tampilan tautan (link) */
+.kartu-profil a {
+  color: #191970;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.kartu-profil a:hover {
+  text-decoration: underline; /* Garis bawah saat pointer mengarah ke link */
+}
+
+/* Mengatur tampilan tombol */
+.kartu-profil button {
+  padding: 8px 16px;
+  background-color: #191970;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kartu-profil button:hover {
+  background-color: #000080; /* Warna tombol sedikit berubah saat disentuh kursor */
 }
